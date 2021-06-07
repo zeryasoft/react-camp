@@ -35,13 +35,6 @@ export default function ProductList() {
               <Table.Cell>{product.category.categoryName}</Table.Cell>
             </Table.Row>
           ))}
-          <Table.Row>
-              <Table.Cell>agdfdfdf</Table.Cell>
-              <Table.Cell>as</Table.Cell>
-              <Table.Cell>as</Table.Cell>
-              <Table.Cell>as</Table.Cell>
-              <Table.Cell>as</Table.Cell>
-            </Table.Row>
         </Table.Body>
 
         <Table.Footer>
