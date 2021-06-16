@@ -4,16 +4,16 @@ import { Button, Card, Image } from "semantic-ui-react";
 import ProductService from "../services/productService";
 
 export default function ProductDetail() {
-  let {id} = useParams();
+  let { id } = useParams();
 
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    let productService = new ProductService()
+    let productService = new ProductService();
     productService
-      .getByProductId(id)
+      .getByProductName(id)
       .then((result) => setProduct(result.data.data));
-  }, []);
+  }, [id]);
 
   return (
     <div>
