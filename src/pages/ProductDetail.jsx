@@ -11,7 +11,7 @@ export default function ProductDetail() {
   useEffect(() => {
     let productService = new ProductService();
     productService
-      .getByProductName(id)
+      .getByProductId(id)
       .then((result) => setProduct(result.data.data));
   }, [id]);
 

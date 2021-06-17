@@ -7,6 +7,7 @@ import { useHistory } from "react-router";
 import { useSelector } from "react-redux";
 
 export default function Navi() {
+  
   const {cartItems} = useSelector(state => state.cart)
   const [isAuthenticated, setIsAuthenticated] = useState(true);
   const history = useHistory();
